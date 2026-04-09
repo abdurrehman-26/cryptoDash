@@ -48,7 +48,7 @@ cron.js runs every minute and updates the stored data automatically.
 
 API exposes the cached data at:
 
-GET http://localhost:3001/crypto
+GET http://localhost:3000/crypto
 
 ## Installation & Setup
 #### 1. Clone the Repository
