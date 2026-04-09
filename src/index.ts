@@ -1,7 +1,8 @@
 import { Elysia } from "elysia";
 import fs from 'fs'
+import { cors } from '@elysiajs/cors'
 
-const app = new Elysia().get("/crypto", () => {
+const app = new Elysia().use(cors()).get("/crypto", () => {
   const raw = fs.readFileSync("./data/crypto.json", "utf8");
     return JSON.parse(raw);
 }).listen(3000);
