@@ -16,7 +16,6 @@ https://github.com/abdurrehman-26/cryptodash-console
 - Cron-based scheduled updates
 - A Bun + Elysia backend API
 - A modern Next.js dashboard
-- Charts powered by Chart.js
 
 ---
 
