@@ -4,10 +4,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "bun run --watch src/index.ts",
-    "start": "bun run src/index.ts"
+    "start:api": "bun run src/index.ts",
+    "start:job-service": "bun run src/services/job-service.ts"
   },
   "dependencies": {
-    "elysia": "latest"
+    "axios": "^1.15.0",
+    "elysia": "latest",
+    "node-cron": "^4.2.1"
   },
   "devDependencies": {
     "bun-types": "latest"
