@@ -6,7 +6,7 @@ A lightweight real-time crypto market dashboard API built using Bun and Elysia.
 
 For Frontend console and setup, check out this repo
 
-```https://github.com/abdurrehman-26/cryptoDash-console```
+https://github.com/abdurrehman-26/cryptodash-console
 
 ## Overview
 
