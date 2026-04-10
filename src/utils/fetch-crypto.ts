@@ -10,9 +10,7 @@ export async function fetchCrypto() {
     const res = await scrapeTop100();
 
     // 1. Ensure the directory exists
-    if (!fs.exists(dir)) {
-      fs.mkdir(dir, { recursive: true });
-    }
+    await fs.mkdir(dir, { recursive: true });
 
     // 2. Write the file
     fs.writeFile(filePath, JSON.stringify(res, null, 2), {
