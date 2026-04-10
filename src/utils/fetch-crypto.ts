@@ -1,4 +1,4 @@
-import fs from "fs";
+import fs from "fs/promises";
 import path from "path";
 import { scrapeTop100 } from "../scraper";
 
@@ -10,12 +10,12 @@ export async function fetchCrypto() {
     const res = await scrapeTop100();
 
     // 1. Ensure the directory exists
-    if (!fs.existsSync(dir)) {
-      fs.mkdirSync(dir, { recursive: true });
+    if (!fs.exists(dir)) {
+      fs.mkdir(dir, { recursive: true });
     }
 
     // 2. Write the file
-    fs.writeFileSync(filePath, JSON.stringify(res, null, 2), {
+    fs.writeFile(filePath, JSON.stringify(res, null, 2), {
       encoding: "utf-8",
     });
 
