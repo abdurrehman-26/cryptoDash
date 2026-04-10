@@ -6,7 +6,7 @@ A lightweight real-time crypto market dashboard API built using Bun and Elysia.
 
 For Frontend console and setup, check out this repo
 
-https://github.com/abdurrehman-26/cryptodash-console
+<a href="https://github.com/abdurrehman-26/cryptodash-console" target="_blank">https://github.com/abdurrehman-26/cryptodash-console</a>
 
 ## Overview
 
@@ -37,7 +37,7 @@ This project is perfect for displaying market trends in a simple, visually meani
 ## How It Works
 #### 1. Data Fetching
 
-fetchCrypto.js pulls the top crypto markets from the Coingecko API and stores them in data.json.
+fetchCrypto.ts pulls the top crypto markets from the Coingecko API and stores them in data.json.
 
 #### 2. Cron Job
 
@@ -51,21 +51,32 @@ GET http://localhost:3001/crypto
 
 ## Installation & Setup
 #### 1. Clone the Repository
+
+```bash
 git clone https://github.com/abdurrehman-26/cryptoDash
 cd cryptoDash
+```
 
 #### 2. Install dependencies:
 
-```bun install```
+```bash
+bun install
+```
 
 #### 3. Start the cron job:
 
-``` bun run start:job-service```
+```bash
+bun run start:job-service
+```
 
 #### 4. Start the API server:
 
-```bun run start:api```
+```bash
+bun run start:api
+```
 
 The API will be live at:
 
-```http://localhost:3001/crypto```
+```bash
+http://localhost:3001/crypto
+```
