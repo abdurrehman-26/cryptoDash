@@ -13,7 +13,7 @@ export async function fetchCrypto() {
     await fs.mkdir(dir, { recursive: true });
 
     // 2. Write the file
-    fs.writeFile(filePath, JSON.stringify(res, null, 2), {
+    await fs.writeFile(filePath, JSON.stringify(res, null, 2), {
       encoding: "utf-8",
     });
 
